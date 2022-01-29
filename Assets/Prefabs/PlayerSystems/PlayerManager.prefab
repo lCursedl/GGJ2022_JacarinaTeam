@@ -45,8 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6beb2c1879cb15040aa2cfd18aa3fa71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Positive: {fileID: 0}
-  Negative: {fileID: 0}
+  Positive: {fileID: 352085740111116218, guid: 4b64c3c9bc141b8418b2baea599312ac, type: 3}
+  Negative: {fileID: 352085740111116218, guid: 2995da782e63dfd4e92b5084c3a54b31, type: 3}
 --- !u!33 &8399849485212724761
 MeshFilter:
   m_ObjectHideFlags: 0

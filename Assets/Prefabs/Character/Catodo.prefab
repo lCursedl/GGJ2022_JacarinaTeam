@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 352085740111116220}
   - component: {fileID: 1752894365297495796}
   m_Layer: 0
-  m_Name: PlayerCharacter
-  m_TagString: Untagged
+  m_Name: Catodo
+  m_TagString: Positive
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

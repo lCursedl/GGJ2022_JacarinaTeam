@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3819496575870946622}
   - component: {fileID: 3819496575870946617}
   - component: {fileID: 3819496575870946616}
+  - component: {fileID: 2931224298032822685}
   m_Layer: 0
   m_Name: PositiveBox
   m_TagString: Positive
@@ -104,3 +105,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!65 &2931224298032822685
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3819496575870946618}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.356075, y: 1.3796715, z: 1.356075}
+  m_Center: {x: -0.000000029802322, y: 0, z: 0.000000029802322}

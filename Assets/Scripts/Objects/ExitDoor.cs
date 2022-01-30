@@ -9,7 +9,8 @@ public class ExitDoor : MonoBehaviour
     private List<SocketPolarity> m_onSockets;
     private int m_requiredSockets = 0;
     private bool m_activate = false;
-
+    [HideInInspector]
+    public bool m_levelClear = false;
     private int m_requiredPlayers = 0;
 
     // Start is called before the first frame update
@@ -35,7 +36,7 @@ public class ExitDoor : MonoBehaviour
         }
         m_activate = amount == m_requiredSockets ? true : false;
         if (m_requiredPlayers == 2) {
-            //Debug.Log("Level Clear!!!");
+            m_levelClear = true;
         }
     }
 

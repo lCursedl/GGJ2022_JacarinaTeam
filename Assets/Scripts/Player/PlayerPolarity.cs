@@ -27,9 +27,9 @@ public class PlayerPolarity : MonoBehaviour
         if(Input.GetButtonDown("Activate") && m_movementScript.Selected) {
             m_fieldActive = !m_fieldActive;
         }
-        if(m_fieldActive) {
-            Debug.Log("ForceField active.");
-        }
+        //if(m_fieldActive) {
+        //    Debug.Log("ForceField active.");
+        //}
     }
 
     private void OnTriggerEnter(Collider other) {
@@ -40,19 +40,23 @@ public class PlayerPolarity : MonoBehaviour
     {
         if (m_fieldActive) {
             GameObject otherObject = other.gameObject;
-            if(!otherObject.name.Equals("Catodo") || !otherObject.name.Equals("Anodo")) {
-                if (other.gameObject.tag.Equals(gameObject.tag)) {
-                    Vector3 force = otherObject.transform.position - gameObject.transform.position;
-                    force.Normalize();
-                    force *= FieldForce;
-                    otherObject.GetComponent<Rigidbody>().velocity = force;
-                }
-                else {
-                    Vector3 force = gameObject.transform.position - otherObject.transform.position;
-                    force.Normalize();
-                    force *= FieldForce;
-                    otherObject.GetComponent<Rigidbody>().velocity = force;
-                }
+            if(!otherObject.name.Equals("Catodo") && !otherObject.name.Equals("Anodo")) {
+                if(otherObject.GetComponent<Rigidbody>() != null) {
+                    if (other.gameObject.tag.Equals(gameObject.tag))
+                    {
+                        Vector3 force = otherObject.transform.position - gameObject.transform.position;
+                        force.Normalize();
+                        force *= FieldForce;
+                        otherObject.GetComponent<Rigidbody>().velocity = force;
+                    }
+                    else
+                    {
+                        Vector3 force = gameObject.transform.position - otherObject.transform.position;
+                        force.Normalize();
+                        force *= FieldForce;
+                        otherObject.GetComponent<Rigidbody>().velocity = force;
+                    }
+                }                
             }
             
         }

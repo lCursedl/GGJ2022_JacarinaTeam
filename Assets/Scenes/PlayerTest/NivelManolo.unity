@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.019806534, g: 0.019203264, b: 0.017253203, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2252,7 +2252,7 @@ PrefabInstance:
       objectReference: {fileID: 660031304}
     - target: {fileID: 9031973449895184932, guid: 9588b5bbaf1fb0e49abf42c64ce0f71a, type: 3}
       propertyPath: NextSceneName
-      value: "Men\xFA"
+      value: Menu
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9588b5bbaf1fb0e49abf42c64ce0f71a, type: 3}

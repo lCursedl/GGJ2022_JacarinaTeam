@@ -12,6 +12,8 @@ public class Elevator : MonoBehaviour
     private Vector3 m_endPos;
     [SerializeField]
     private float Interpolation;
+    [SerializeField]
+    private float MaxHeigth;
     private Vector3 m_pos;
     // Start is called before the first frame update
     void Start() {
@@ -36,10 +38,9 @@ public class Elevator : MonoBehaviour
         m_active = amount > 0 ? true : false;
 
         if(m_active) {
-            m_endPos.y = m_startPos.y + 2.4f;
+            m_endPos.y = m_startPos.y + MaxHeigth;
         }
-        else
-        {
+        else {
             m_endPos.y = m_startPos.y;
         }
 

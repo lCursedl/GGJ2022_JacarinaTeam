@@ -711,6 +711,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 77917939204434765, guid: 10b0d34f163d8ea4bb4e3b81f7039a80, type: 3}
+      propertyPath: MaxHeigth
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 77917939204434765, guid: 10b0d34f163d8ea4bb4e3b81f7039a80, type: 3}
       propertyPath: Interpolation
       value: 100
       objectReference: {fileID: 0}
@@ -726,6 +730,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Elevator
       objectReference: {fileID: 0}
+    - target: {fileID: 8547526189800703704, guid: 10b0d34f163d8ea4bb4e3b81f7039a80, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8547526189800703704, guid: 10b0d34f163d8ea4bb4e3b81f7039a80, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.708
+      objectReference: {fileID: 0}
+    - target: {fileID: 8547526189800703704, guid: 10b0d34f163d8ea4bb4e3b81f7039a80, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8586576637738800403, guid: 10b0d34f163d8ea4bb4e3b81f7039a80, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -736,7 +752,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8586576637738800403, guid: 10b0d34f163d8ea4bb4e3b81f7039a80, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.07
       objectReference: {fileID: 0}
     - target: {fileID: 8586576637738800403, guid: 10b0d34f163d8ea4bb4e3b81f7039a80, type: 3}
       propertyPath: m_LocalPosition.z
